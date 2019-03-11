@@ -14,3 +14,19 @@ anyNumber = true // 这样赋值是对的
 let anyThing: any = 'fe'
 console.log(anyThing.name)
 console.log(anyThing.func('aa')) // 这些写法都是允许的
+
+
+
+// 类型推断
+
+// 联合类型
+let strNumber: string | number
+strNumber = '123'
+strNumber = 123
+// strNumber = true 这行就不行
+// 访问联合类型的属性和方法，只能访问共有的
+function func(param: string | number) {
+  // return param.length length属性不是共有的
+  return param.toString()
+}
+
