@@ -21,7 +21,7 @@ let jsBook: Book = {
   name: '深入浅出js'
 }
 
-// 任意属性
+// 任意属性 索引签名 【!!!】
 interface People {
   name: string;
   age?: number;
