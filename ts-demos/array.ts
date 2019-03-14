@@ -28,3 +28,12 @@ function func() {
   // ----------
   let args1: IArguments = arguments
 }
+
+// 元祖
+// 数组合并了相同类型的对象， 元祖合并了不同类型的对象
+let yuanzu: [string, number] = ['fe', 24]
+let yuanzu1: [string, number]
+yuanzu1[0] = 'fe'
+ //yuanzu = 'fe' ❌
+yuanzu1 = ['fe', 24]
+// yuanzu1.push(true) ❌
