@@ -1,0 +1,19 @@
+{
+  "name": "srm-utils",
+  "version": "1.0.0",
+  "description": "公共方法工具库",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack webpack.config.js"
+  },
+  "keywords": [],
+  "author": "shiroumi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "webpack": "^4.35.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.4"
+  }
+}
