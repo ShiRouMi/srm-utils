@@ -1,19 +1,24 @@
 {
   "name": "srm-utils",
-  "version": "1.0.0",
+  "version": "1.2.5",
   "description": "公共方法工具库",
-  "main": "index.js",
+  "main": "dist/srm-utils.js",
   "scripts": {
-    "serve": "webpack webpack.config.js"
+    "build": "webpack",
+    "publish": "build && npm publish"
   },
-  "keywords": [],
+  "keywords": [
+    "util"
+  ],
   "author": "shiroumi",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "axios": "^0.19.0",
-    "webpack": "^4.35.0"
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   },
-  "devDependencies": {
-    "webpack-cli": "^3.3.4"
-  }
+  "devDependencies": {}
 }

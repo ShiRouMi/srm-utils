@@ -1,6 +1,6 @@
 let uid = 0
 
-export class Event {
+class Event {
   constructor() {
     this.id = ++uid
     this._events = {}
@@ -90,3 +90,5 @@ export class Event {
     return ctx
   }
 }
+
+export default Event

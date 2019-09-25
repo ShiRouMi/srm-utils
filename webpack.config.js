@@ -1,14 +1,25 @@
-const path = require('path');
+const path = require("path")
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
+  mode: "production",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'shiroumi-utils-webpack.bundle.js'
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/dist/",
+    filename: "srm-utils.js",
+    libraryTarget: "commonjs2"
   },
   module: {
     rules: [
-      
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
+      }
     ]
   }
 }
