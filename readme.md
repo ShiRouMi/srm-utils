@@ -1,5 +1,5 @@
 # srm-utils
-
+[![NPM](https://nodei.co/npm/srm-utils.png)](https://nodei.co/npm/srm-utils/)
 ## 使用
 
 ## Store
